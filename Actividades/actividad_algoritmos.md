@@ -38,10 +38,9 @@ fin
 
 ```
 inicio
-leer Nota_1, Nota_2, Nota_3, Nota_4, Nota_5, Nota_6,
+leer Nota_1, Nota_2, Nota_3, Nota_4, Nota_5, Nota_6
 Total = Nota_1 + Nota_2 + Nota_3 + Nota_4 + Nota_5 + Nota_6
 promedio = Total/6
-Nota_Necesitada = Promedio
 nota_calculada = promedio × 0.7
 Nota_necesaria = (3.0 - nota_calculada)/0.3
 Si Nota_necesaria > 5.0 entonces
@@ -55,16 +54,98 @@ fin
 
  ```
 
+![alt text](<Diagrama sin título.drawio.png>)
 
 
 
-# tarea
-### Parte 1: Identificar Algoritmos
 
-Responde si los siguientes enunciados representan un algoritmo. Justifica la respuesta:
 
-1. Una página web.
-2. Una receta para hacer un pastel, donde se indican ingredientes y pasos a seguir.
-3. "Piensa en un número y multiplícalo por otro".
-4. Un manual de instrucciones para armar un mueble, con pasos detallados y un orden claro.
-5. Una lista de compras organizada en orden alfabético
+
+
+## Ejercicio de clase 2
+
+cuánto se debe pagar por equis cantidad de lápices considerando que si son 1000 o más el costo es de $85 cada uno; de lo contrario, el precio es de $90.
+
+
+|variables| tipo | comentario|
+|----------|-----|------------|
+Lapices| entrada| cantidad de lapices
+precio | salida| precio total de los lapices
+valor_unidad| intermedia| valor unitario de cada lapiz
+85, 90| constantes|no cambian
+
+```
+leer lapices
+ Si lapices >= 1000:
+     valor_unidad = 85
+ Si no 
+     valor_unidad = 90
+fin Si
+
+Precio = Lapices * valor_unidad
+escribir "El valor es:", Precio
+
+Fin
+
+``` 
+
+
+![alt text](../diagrama2.png)
+
+
+
+
+
+
+## Actividad 3
+Un almacén de ropa tiene una promoción: por compras superiores a $250 000 se les aplicará un descuento de 15%, de caso contrario, sólo se aplicará un 8% de descuento. Realice un algoritmo para determinar el precio final que debe pagar una persona por comprar en dicho almacén y de cuánto es el descuento que obtendrá. 
+
+|variables |Tipo |Comentario |
+|----------|-----|-----------|
+total_compra|entrada|valor de la compra
+descuento|salida|descuento segun el valor de la compra
+precio_final|salida|valor a pagar|
+15% 8% $250000|
+
+### pseudocodigo
+  
+```
+inicio
+leer
+
+```
+
+
+
+## ejercicio 5
+El director de una escuela está organizando un viaje de estudios, y requiere determinar cuánto debe cobrar a cada alumno y cuánto debe pagar a la compañía de viajes por el servicio. La forma de cobrar es la siguiente: si son 100 alumnos o más, el costo por cada alumno es de $65.00; de 50 a 99 alumnos, el costo es de $70.00, de 30 a 49, de $95.00, y si son menos de 30, el costo de la renta del autobús es de $4000.00, sin importar el número de alumnos.
+
+|variables |Tipo |Comentario |
+|----------|-----|-----------|
+alumnos| entrada|cantidad de alumnos
+costo-alumno| salida|costo individual por alumno
+costo-total| salida|el valor total 
+100, 50-99, 30-49| constantes|# de alumnos
+
+```
+inicio
+leer alumnos
+  Si alumnos >= 100:
+       costo_alumno = 65
+  Si no 
+      si alumnos >= 50:
+          costo_alumno = 70
+      si no 
+         si alumnos >= 30:
+            costo_alumno = 95
+         si no 
+           costo_total= 4000
+           costo_alumno= costo_total/alumnos
+         fin si
+      fin si
+  fin si
+  costo_total= costo_alumno * alumnos
+  escribir costo_total, costo_alumno
+      
+
+
