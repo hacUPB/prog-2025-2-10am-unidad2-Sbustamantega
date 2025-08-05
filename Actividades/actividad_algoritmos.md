@@ -33,6 +33,31 @@ fin
 
 
 
+
+## Actividad de tarea
+
+```
+inicio
+leer Nota_1, Nota_2, Nota_3, Nota_4, Nota_5, Nota_6,
+Total = Nota_1 + Nota_2 + Nota_3 + Nota_4 + Nota_5 + Nota_6
+promedio = Total/6
+Nota_Necesitada = Promedio
+nota_calculada = promedio × 0.7
+Nota_necesaria = (3.0 - nota_calculada)/0.3
+Si Nota_necesaria > 5.0 entonces
+   Escribir "No es posible alcanzar 3.0, necesitas más de 5.0"
+Sino si Nota_necesaria < 0 entonces
+   Escribir "Ya tienes más de 3.0, no necesitas nota en el final"
+Sino
+   Escribir "Necesitas sacar", Nota_necesaria, "en la nota final para pasar con 3.0"
+Fin si
+fin
+
+ ```
+
+
+
+
 # tarea
 ### Parte 1: Identificar Algoritmos
 
