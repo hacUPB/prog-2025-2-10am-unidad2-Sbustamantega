@@ -5,11 +5,12 @@
 
 el óvalo o terminal para indicar el inicio o fin, el rectángulo o proceso para indicar una acción o proceso, el diamante o decisión para mostrar un punto de bifurcación, y el paralelogramo o entrada/salida para datos que entran o salen del sistema
 
+![alt text](/Actividades/imagenes/image.png)
 
 
 
 
-![alt text](image.png)
+
 
 
 # Ejercicio 2
@@ -26,7 +27,7 @@ Escribir ID, total, promedio
 fin
  ```
  ## diagrama de flujo
- ![alt text](<../Diagrama sin título.drawio.png>)
+ ![alt text](<../actividades/imagenes/Diagrama sin título.drawio.png>)
 
 
 
@@ -48,7 +49,8 @@ fin
 
  ```
 
-![alt text](<Diagrama sin título.drawio.png>)
+![alt text](<imagenes/Diagrama sin título.drawio.png>)
+
 
 
 
@@ -84,7 +86,8 @@ Fin
 ``` 
 
 
-![alt text](../diagrama2.png)
+![alt text](..//Actividades/imagenes/diagrama2.png)
+
 
 
 
@@ -116,7 +119,11 @@ Escribir "Valor a pagar:", precio_final
 Fin
 
 ```
-![alt text](<../punto 4.png>)
+![alt text](<../actividades/imagenes/punto 4.png>)
+
+
+
+
 
 
 ## ejercicio 5
@@ -155,7 +162,7 @@ fin
 
 
 
-![alt text](diagrama_alumnos.png)
+![alt text](/Actividades/imagenes/diagrama_alumnos.png)
 
 
 
