@@ -129,6 +129,7 @@ costo-alumno| salida|costo individual por alumno
 costo-total| salida|el valor total 
 100, 50-99, 30-49| constantes|# de alumnos
 
+### pseudocodigo
 ```
 inicio
 leer alumnos
@@ -155,3 +156,42 @@ fin
 
 
 ![alt text](diagrama_alumnos.png)
+
+
+
+
+
+
+## Actividad de tarea
+
+
+|Variables|Tipo|Comentario|
+|---------|----|----------|
+Año_n|entrada|año de nacimiento
+Mes_n|entrada|mes de nacimiento
+Dia_n|entrada|dia de nacimiento
+Año_actual|entrada|
+Mes_actual|entrada|
+Dia_actual|entrada|
+
+
+
+
+```
+Inicio
+Leer Dia_n, Mes_n, Año_n, Dia_actual, Mes_actual, Año_actual
+Edad-actual = Año_actual - Año_n
+   Si Mes_n > Mes_actual:
+        Edad_actual = Edad_actual - 1
+   Si no
+        Si Mes_n = Mes_actual:
+            Si Dia_n > Dia_a:
+                Edad_actual = Edad_actual - 1
+            FinSi
+        FinSi
+   FinSi
+Escribir "La edad actual es:", Edad_actual
+Fin
+```
+
+
