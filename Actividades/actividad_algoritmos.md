@@ -43,13 +43,7 @@ Total = Nota_1 + Nota_2 + Nota_3 + Nota_4 + Nota_5 + Nota_6
 promedio = Total/6
 nota_calculada = promedio × 0.7
 Nota_necesaria = (3.0 - nota_calculada)/0.3
-Si Nota_necesaria > 5.0 entonces
-   Escribir "No es posible alcanzar 3.0, necesitas más de 5.0"
-Sino si Nota_necesaria < 0 entonces
-   Escribir "Ya tienes más de 3.0, no necesitas nota en el final"
-Sino
-   Escribir "Necesitas sacar", Nota_necesaria, "en la nota final para pasar con 3.0"
-Fin si
+Escribir Nota_necesaria
 fin
 
  ```
@@ -62,7 +56,7 @@ fin
 
 
 
-## Ejercicio de clase 2
+## Ejercicio de clase 3
 
 cuánto se debe pagar por equis cantidad de lápices considerando que si son 1000 o más el costo es de $85 cada uno; de lo contrario, el precio es de $90.
 
@@ -97,7 +91,7 @@ Fin
 
 
 
-## Actividad 3
+## Actividad 4
 Un almacén de ropa tiene una promoción: por compras superiores a $250 000 se les aplicará un descuento de 15%, de caso contrario, sólo se aplicará un 8% de descuento. Realice un algoritmo para determinar el precio final que debe pagar una persona por comprar en dicho almacén y de cuánto es el descuento que obtendrá. 
 
 |variables |Tipo |Comentario |
@@ -111,10 +105,18 @@ precio_final|salida|valor a pagar|
   
 ```
 inicio
-leer
+leer total_compra
+Si total_compra > 250000:
+    descuento = total_compra * 0.15
+Si no 
+    descuento = total_compra * 0.08
+Fin Si
+precio_final = total_compra - descuento
+Escribir "Valor a pagar:", precio_final
+Fin
 
 ```
-
+![alt text](<../punto 4.png>)
 
 
 ## ejercicio 5
@@ -146,6 +148,10 @@ leer alumnos
   fin si
   costo_total= costo_alumno * alumnos
   escribir costo_total, costo_alumno
-      
+fin
+```
 
 
+
+
+![alt text](diagrama_alumnos.png)
