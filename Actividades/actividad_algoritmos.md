@@ -195,5 +195,5 @@ Fin
 ```
 
 
-![imagen](tarea%edad.drawio.png)
+![imagen](/Actividades/imagenes/tarea%20edad.drawio.png)
 
