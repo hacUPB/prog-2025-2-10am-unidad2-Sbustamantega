@@ -40,3 +40,19 @@ calcular el factorial de un numero entero ingresado por el usuario.
 
 ```
 Inicio
+Leer N
+
+
+  SI numero < 0 ENTONCES
+    ESCRIBIR "No se puede calcular el factorial de un número negativo."
+  SINO SI numero == 0 ENTONCES
+    ESCRIBIR "El factorial de 0 es 1."
+  SINO
+    ASIGNAR contador = numero
+    MIENTRAS contador > 0 HACER
+      factorial = factorial * contador
+      contador = contador - 1
+    FIN MIENTRAS
+    ESCRIBIR "El factorial de ", numero, " es ", factorial
+  FIN SI
+FIN
