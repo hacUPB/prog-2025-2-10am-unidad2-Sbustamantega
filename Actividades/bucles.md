@@ -88,44 +88,38 @@ valor_cuota|salida|
 
 ```
 Inicio
+Definir tasa_interes = 0.02
+
 Leer valor_compra, n_cuotas
-cuota_mensual = valor_compra * (tasa_interes / (1 - (1 + tasa_interes)^(-numero_cuotas)))
 
-saldo_pendiente = valor_compra
-total_intereses = 0
+cuota = valor_compra / n_cuotas
+saldo = valor_compra
+    total_intereses = 0
+    cuota_actual = 1
 
-Escribir "--- Plan de pagos ---"
-Escribir "Cuota mensual fija: " + cuota_mensual REDONDEADO_A_2_DECIMALES
+    Mientras saldo > 0 Hacer
+        interes = saldo * tasa_interes
+        abono = cuota
+        pago = interes + abono
 
-    // Iterar para cada una de las cuotas
-    PARA i DESDE 1 HASTA numero_cuotas HACER
-        // Calcular los intereses del mes sobre el saldo pendiente
-        DEFINIR intereses_cuota = saldo_pendiente * tasa_interes
+        saldo = saldo - abono
+        total_intereses = total_intereses + interes
 
-        // Calcular el abono a capital (lo que se resta de la deuda principal)
-        DEFINIR abono_capital = cuota_mensual - intereses_cuota
+        Escribir "Cuota " + cuota_actual + ":"
+        Escribir "  - Intereses: " + interes REDONDEADO_A_2_DECIMALES
+        Escribir "  - Abono a capital: " + abono REDONDEADO_A_2_DECIMALES
+        Escribir "  - Total a pagar: " + pago REDONDEADO_A_2_DECIMALES
+        Escribir "  - Saldo restante: " + saldo REDONDEADO_A_2_DECIMALES
 
-        // Actualizar el saldo pendiente
-        saldo_pendiente = saldo_pendiente - abono_capital
+        cuota_actual = cuota_actual + 1
+    Fin_Mientras
 
-        // Sumar los intereses al total
-        total_intereses = total_intereses + intereses_cuota
-
-        // Mostrar los detalles de la cuota actual
-        MOSTRAR "Cuota " + i + ":"
-        MOSTRAR "  - Intereses: " + intereses_cuota REDONDEADO_A_2_DECIMALES
-        MOSTRAR "  - Abono a capital: " + abono_capital REDONDEADO_A_2_DECIMALES
-        MOSTRAR "  - Saldo pendiente: " + saldo_pendiente REDONDEADO_A_2_DECIMALES
-    FIN_PARA
-
-MOSTRAR "--- Resumen ---"
-MOSTRAR "Valor total a pagar: " + (valor_compra + total_intereses) REDONDEADO_A_2_DECIMALES
-MOSTRAR "Total de intereses pagados: " + total_intereses REDONDEADO_A_2_DECIMALES
-FIN
+    Escribir "--- Resumen ---"
+    Escribir "Total intereses pagados: " + total_intereses REDONDEADO_A_2_DECIMALES
+    Escribir "Total pagado: " + (valor_compra + total_intereses) REDONDEADO_A_2_DECIMALES
+Fin
 
 ```
-
-
 
 
 
