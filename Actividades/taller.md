@@ -33,7 +33,7 @@ En una pista de pruebas de aeronaves, el sistema debe verificar si el peso total
 |peso_aeronave|Entrada|el peso calculado con combustible y carga|
 |peso_exceso|salida|el peso por el que la aeronave supera el maximo
 
-
+```
 Inicio
 Leer peso_aeronave
     Si peso_aeronave > peso_maximo
@@ -43,6 +43,7 @@ Leer peso_aeronave
         Escribir "La aeronave esta lista para despegar"
     Fin Si
 Fin
+```
 
 ## Punto 3 - Registro de altitudes de vuelo
 
@@ -54,7 +55,7 @@ Un sistema debe registrar la altitud de vuelo cada 10 minutos durante una hora y
 |Lista|Salida|Altitudes registradas|
 
 
-
+```
 Inicio
     contador = 0
     Mientras contador < 6 :
@@ -68,7 +69,7 @@ Inicio
          Escribir Lista[contador]
     Fin Desde
 Fin
-
+```
 
 
 ## Punto 5 - Detección de turbulencia en trayecto
@@ -81,7 +82,7 @@ Un sensor mide la aceleración vertical de la aeronave en intervalos de un segun
 |i|Variable intermedia|Intervalos de segundo durante dos segundos|
 
 
-
+```
 Inicio
 Umbral = 500
 para i=1 hasta i=120
@@ -91,5 +92,5 @@ para i=1 hasta i=120
     Fin si 
 Fin para 
 Fin     
-
+```
 # Hecho por Camilo Valdés Montoya, Jose Alejandro Granados y Santiago Bustamante
