@@ -94,10 +94,9 @@ Leer valor_compra, n_cuotas
 
 cuota = valor_compra / n_cuotas
 saldo = valor_compra
-    total_intereses = 0
-    cuota_actual = 1
-
-    Mientras saldo > 0 Hacer
+total_intereses = 0
+cuota_actual = 1
+  Mientras saldo > 0 Hacer
         interes = saldo * tasa_interes
         abono = cuota
         pago = interes + abono
@@ -112,7 +111,7 @@ saldo = valor_compra
         Escribir "  - Saldo restante: " + saldo REDONDEADO_A_2_DECIMALES
 
         cuota_actual = cuota_actual + 1
-    Fin_Mientras
+  Fin_Mientras
 
     Escribir "--- Resumen ---"
     Escribir "Total intereses pagados: " + total_intereses REDONDEADO_A_2_DECIMALES
@@ -122,14 +121,30 @@ Fin
 ```
 
 
+## ejercicio 4.5 libro
+
+se requiere un algoritmo para determinar cuanto ahorrara en pesos una persona diariamente, y en un año si ahorra 3 pesos el primero de enero, 9 el dos de enero, 27 el 3 de enero y asi sucesivamente todo el año. represente la solucion mediante un diagrema de flujo
+
+|variables|tipo|comentario|
+|---------|----|----------|
+|ahorro_año|salida
+|monto_diario|
 
 
+```
+Inicio
+monto_diario = 1
+ahorro_acomulado = 0
 
+  Desde i=1 hasta i=365 
+      aporte_diario = monto diario * 3 
+      ahorro_acomulado = ahorro_acomulado + aporte_diario
+      escribir "lleva ahorrado:", ahorro_acomulado
+      monto_diario = monto diario * 3
+  Fin Desde
+Escrbir "ahorro total del año:", ahorro_acomulado
+Fin
 
-
-
-
-
-
+```
 
 
