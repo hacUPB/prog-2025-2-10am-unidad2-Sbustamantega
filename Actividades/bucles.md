@@ -147,4 +147,52 @@ Fin
 
 ```
 
+## Ejercicio
+2.Control de combustible en pruebas   
+ Durante un ensayo en banco de un motor a reacción, se mide el nivel de combustible cada minuto y se detiene el registro cuando el combustible baja del 10%. Mostrar el tiempo total de operación antes de llegar a ese punto.
 
+|variables|tipo|comentario|
+|---------|----|----------|
+|nivel_combustible|entrada|porcentaje de combustible restante
+|tiempo|salida|
+
+
+
+```
+Inicio
+nivel_combustible = 100
+tiempo = 0
+  Mientras nivel_combustible >= 10
+     leer nivel_combustible
+     tiempo = tiempo + 1
+  Fin Mientras
+tiempo = tiempo - 1
+escribir tiempo
+Fin
+
+```
+
+
+## Ejercicio
+3. **Simulación de conteo de pasajeros**
+ Durante el abordaje, un sistema cuenta a los pasajeros que ingresan. Si el número total supera la capacidad máxima, el sistema debe detener el conteo y mostrar un mensaje de alerta.
+
+|variables|tipo|
+|---------|----|
+|numero_pasajeros|
+|pasajeros_entrantes|
+|capacidad_maxima|
+
+
+```
+inicio
+leer capacidad_maxima
+numero_pasajeros = 0
+  Mientras numero_pasajeros <= capacidad_maxima
+     leer pasajeros_entrantes
+     numero_pasajeros = numero_pasajeros + pasajeros entrantes
+  Fin Mientras
+escribir "capacidad maxima de pasajeros excedida"
+Fin
+
+```
